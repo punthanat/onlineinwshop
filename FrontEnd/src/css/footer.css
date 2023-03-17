@@ -1,0 +1,102 @@
+.contactFooterContainer {
+  padding: 10px;
+  background-color: #d1eafd;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contactFooterContainer > div {
+  padding: 50px;
+}
+
+.sitFooter {
+  align-items: center;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.MemberCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 25px;
+  border-width: 4px;
+  padding: 10px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+}
+.MemberCard > div {
+  flex: 1;
+  font-weight: 600;
+}
+
+.bottomFooter {
+  position: relative;
+
+  bottom: 0;
+  left: 0;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 8%);
+  margin: 0;
+  padding: 0;
+  background-color: #333435;
+  color: white;
+  width: 100%;
+}
+
+.bottomFooter > .bottomFooterContent {
+  text-align: center;
+
+  font-weight: 100;
+}
+
+.resFontName {
+  font-size: 20px;
+}
+
+.resFontMail {
+  font-size: 16px;
+}
+
+.resFontRole {
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .resFontName {
+    font-size: 13px;
+  }
+
+  .resFontMail {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .resFontName {
+    font-size: 10px;
+  }
+
+  .resFontMail {
+    font-size: 9px;
+  }
+  .resFontRole {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 425px) {
+  .resFontName {
+    font-size: 16px;
+  }
+
+  .resFontMail {
+    font-size: 13px;
+  }
+  .resFontRole {
+    font-size: 14px;
+  }
+}

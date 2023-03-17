@@ -1,0 +1,24 @@
+.dialogButtonZone {
+  display: flex;
+  flex-direction: row;
+}
+
+.confirmHead {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+@media (max-width: 425px) {
+  .confirmHead {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 375px) {
+    .confirmHead {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  

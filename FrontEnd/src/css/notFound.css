@@ -1,0 +1,89 @@
+.notFoundPage {
+  color: #181818;
+
+  font-family: Prompt, sans-serif;
+}
+
+.notFoundText {
+  position: absolute;
+  z-index: 1;
+}
+.notFoundText > h1 {
+  font-size: 72px;
+}
+.notFoundText > h3 {
+  font-size: 20px;
+}
+
+.notFoundText > h4 {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .notFoundText > h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .notFoundText > h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .notFoundText > h1 {
+    font-size: 30px;
+  }
+  .notFoundText > h3 {
+    font-size: 18px;
+  }
+
+  .notFoundText > h4 {
+    font-size: 15px;
+  }
+}
+
+.goHomeButton {
+  background: #1895f5;
+  color: white;
+  padding: 20px;
+  margin-top: 10px;
+  border-style: solid;
+  border-radius: 10px;
+  font-size: 20px;
+  border-color: #1895f5;
+}
+
+.goHomeButton:hover {
+  cursor: pointer;
+  color: whitesmoke;
+  border-color: #333435;
+  background-color: #333435;
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .goHomeButton {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .goHomeButton {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .notFoundText > h1 {
+    font-size: 20px;
+  }
+  .notFoundText > h3 {
+    font-size: 15px;
+  }
+
+  .notFoundText > h4 {
+    font-size: 12px;
+  }
+}

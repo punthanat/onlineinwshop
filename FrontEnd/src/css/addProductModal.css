@@ -1,0 +1,23 @@
+.productModalContent {
+  z-index: 2;
+  margin: 0 auto;
+  display: block;
+  top: 120px;
+  background-color: white;
+  color: #333435;
+  max-width: 800px;
+  width: auto;
+  height: auto;
+  padding-bottom: 15px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productNameInModal {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}

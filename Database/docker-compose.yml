@@ -1,0 +1,25 @@
+version: '3'
+services:
+  database:
+   build: .
+   image: 222mysql
+   container_name: 222mysql
+   environment: 
+    - MYSQL_DATABASE=int222
+    - MYSQL_ROOT_USER=admin
+    - MYSQL_ROOT_PASSWORD=Abc123456789
+   volumes:
+    - "~/database/data/_data:/var/lib/mysql"
+    - "~/database/data/my.cnf:/etc/my.cnf"
+   ports:
+    - "3306:3306"
+   networks:
+       docker_network:
+          ipv4_address: 172.22.0.2
+
+networks:
+  default:
+    external:
+       name: docker_network
+  docker_network:
+    external: true

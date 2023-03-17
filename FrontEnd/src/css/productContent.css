@@ -1,0 +1,63 @@
+.infoBox {
+  display: flex;
+  flex-flow: row wrap;
+  border-style: solid;
+  border-width: 0.1px 0 0.1px 0;
+  border-color: #ebebeb;
+  color: #666666;
+  font-size: 16px;
+}
+
+.infoBox:hover {
+  transition-duration: 0.5s;
+  cursor: pointer;
+  color: #3595f6;
+}
+
+.infoText {
+  text-align: right;
+  width: 55%;
+}
+
+@media (max-width: 768px) {
+  .infoText {
+    font-size: 20px;
+  }
+}
+
+.infoShow,
+.commentShow {
+  color: #666666;
+  font-size: 14px;
+}
+
+.infoShow {
+  padding-left: 35px;
+  padding-right: 35px;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+#infoProduct:checked ~ .infoShow {
+  max-height: 100vh;
+}
+
+.commentShow {
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+#commentsProduct:checked ~ .commentShow {
+  max-height: 100%;
+  height: auto;
+}
+
+.commentBox {
+  border-style: solid;
+  border-width: 0 0 0.1px 0;
+  border-color: #ebebeb;
+  color: #666666;
+}

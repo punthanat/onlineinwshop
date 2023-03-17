@@ -1,0 +1,25 @@
+version: "3"
+services:
+  backend:
+    build: .
+    image: backend
+    ports: 
+      - "3000:3000"
+    container_name: backend
+    environment:
+      - MYSQL_URL=${MYSQL_URL}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - ORIGIN_HOST=${ORIGIN_HOST} 
+      - ORIGIN_METHOD=${ORIGIN_METHOD}
+    volumes:
+      - /home/banjo222/backend_data:/public/product-images
+    networks:
+       docker_network:
+          ipv4_address: 172.22.0.4
+networks:
+  default:
+    external:
+       name: docker_network
+  docker_network:
+    external: true

@@ -1,0 +1,22 @@
+version: '3'
+services:
+ sslReverseProxy:
+    container_name: sslReverseProxy
+    image: nginx
+    volumes:
+         - /home/dohttps/nginx/config/nginx.conf:/etc/nginx/nginx.conf/:rw
+         - /home/dohttps/nginx/config/conf.d/default.conf:/etc/nginx/conf.d/default.conf:rw 
+         - /home/dohttps/nginx/logs:/var/log/nginx/:rw  
+         - /home/dohttps/nginx/ssl:/ssl/:rw
+    ports:
+         - "80:80"
+         - "443:443"
+    networks:
+       docker_network:
+          ipv4_address: 172.22.0.10
+networks:
+  default:
+    external:
+       name: docker_network
+  docker_network:
+    external: true

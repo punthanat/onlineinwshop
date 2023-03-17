@@ -1,0 +1,411 @@
+@import url(https://fonts.googleapis.com/css2?family=Prompt:wght@200&display=swap);
+
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  background-image: url(./images/asset/body-bg.jpg);
+  font-family: Prompt, sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  outline: none;
+}
+
+.normalFont {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #000000a3;
+  border-radius: 10px;
+}
+
+.pageContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.pageContainer > .pageContent {
+  flex: 1;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+.baseColor {
+  color: #1895f5;
+}
+
+.baseColor2 {
+  color: #333435;
+}
+.baseColor3 {
+  color: #d83c2d;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:visited {
+  color: black;
+}
+
+.hoverCursor:hover {
+  cursor: pointer;
+}
+
+.underlineHover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.hoverChangeToNavBarColor:hover {
+  cursor: pointer;
+  color: #1895f5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.alignCenter {
+  align-content: center;
+}
+
+.h-30 {
+  height: 30px;
+}
+.f12 {
+  font-size: 12px;
+}
+
+.f13 {
+  font-size: 13px;
+}
+
+.f14 {
+  font-size: 14px;
+}
+
+.f15 {
+  font-size: 15px;
+}
+
+.f16 {
+  font-size: 16px;
+}
+.f17 {
+  font-size: 17px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+.f20 {
+  font-size: 20px;
+}
+
+.f22 {
+  font-size: 22px;
+}
+
+.f23 {
+  font-size: 23px;
+}
+
+.f24 {
+  font-size: 24px;
+}
+
+.f28 {
+  font-size: 28px;
+}
+
+.f72 {
+  font-size: 72px;
+}
+
+.b {
+  font-weight: 900;
+}
+
+.p-6 {
+  padding: 6px;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.p-5-10 {
+  padding: 5px 10px 5px 10px;
+}
+
+.p-20-5 {
+  padding: 20px 5px 20px 5px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+.pt-35 {
+  padding-top: 35px;
+}
+
+.pt-80 {
+  padding-top: 80px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.pl-10 {
+  padding-left: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.pl-25 {
+  padding-left: 25px;
+}
+
+.pl-35 {
+  padding-left: 35px;
+}
+
+.pl-40 {
+  padding-left: 40px;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.pr-50 {
+  padding-right: 50px;
+}
+.w40 {
+  width: 40%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w95 {
+  width: 95%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.mw50 {
+  max-width: 50%;
+}
+
+.mw75 {
+  max-width: 75%;
+}
+
+.mw90 {
+  max-width: 90%;
+}
+.mw100 {
+  max-width: 100%;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.m-center {
+  margin: 0 auto;
+}
+
+.m-0 {
+  margin: 0px;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.ml-12 {
+  margin-left: 12px;
+}
+
+.mlr-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-6 {
+  margin-top: 6px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.-mb-10 {
+  margin-bottom: -10px;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.flexRes {
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .flexRes {
+    flex-direction: column;
+  }
+}
+
+.roundBorder {
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #ebebeb;
+  border-width: 2px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.squidgirlnotfound {
+  opacity: 0.6;
+  max-width: 200px;
+  width: 100%;
+}

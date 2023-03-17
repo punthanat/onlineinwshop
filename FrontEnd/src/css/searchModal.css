@@ -1,0 +1,17 @@
+.sortBy {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 3px;
+  background-color: #333435;
+  color: whitesmoke;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.sortBy:hover,
+.sortBy option:hover {
+  cursor: pointer;
+}

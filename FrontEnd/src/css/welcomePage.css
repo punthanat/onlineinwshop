@@ -1,0 +1,268 @@
+.welcomePageContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1600px;
+  margin-top: 20px;
+}
+
+.welcomeCover {
+  opacity: 0.85;
+  width: 100%;
+  height: auto;
+}
+
+.startButtonContainer {
+  max-width: 1600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 850px;
+}
+
+.startButton {
+  font-family: "Press Start 2P", cursive;
+  padding: 20px;
+  border-radius: 20px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-size: 40px;
+  color: whitesmoke;
+  background-color: #1895f5;
+  box-shadow: 0px 0px 60px #1895f5;
+  transition: 0.3s;
+}
+
+.startButton:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background: #ff77fd;
+  box-shadow: 0px 0px 60px #ff77fd;
+}
+@media (max-width: 1440px) {
+  .startButtonContainer {
+    top: 750px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .startButtonContainer {
+    top: 650px;
+  }
+}
+@media (max-width: 1070px) {
+  .startButtonContainer {
+    top: 575px;
+  }
+  .startButton {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 950px) {
+  .startButtonContainer {
+    top: 500px;
+  }
+  .startButton {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .startButtonContainer {
+    top: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .startButtonContainer {
+    top: 375px;
+  }
+}
+
+@media (max-width: 500px) {
+  .startButtonContainer {
+    top: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .startButtonContainer {
+    top: 275px;
+  }
+}
+
+@media (max-width: 375px) {
+  .startButtonContainer {
+    top: 250px;
+  }
+}
+
+@media (max-width: 320px) {
+  .startButtonContainer {
+    top: 220px;
+  }
+}
+
+.welcomeHeader {
+  font-family: "Press Start 2P", cursive;
+  max-width: 1600px;
+  width: 100%;
+  padding: 5px 0;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  position: absolute;
+  text-align: center;
+  top: 160px;
+  color: whitesmoke;
+  outline: none;
+  opacity: 0.9;
+  transition: 1s all ease;
+  z-index: 1;
+  background: #333435;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .welcomeHeader {
+    font-size: 20px;
+    top: 120px;
+  }
+}
+
+@media (max-width: 425px) {
+  .welcomeHeader {
+    font-size: 13px;
+    top: 100px;
+  }
+}
+
+.welcomeHeader::before {
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  align-items: center;
+  max-width: 1600px;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  background: #ff77fd;
+  content: "let's shopping";
+  color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.welcomeHeader:hover::before {
+  color: whitesmoke;
+  cursor: pointer;
+  width: 100%;
+}
+
+.allWelcomeTopicContainer {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  background-color: #333435;
+  color: white;
+  height: 100%;
+  padding-bottom: 50px;
+  border-radius: 5px;
+}
+
+.welcomeTopicContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.imageTopic {
+  max-width: 450px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.headerTopic {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1895f5;
+  text-shadow: 0 0 10px #333435;
+}
+.contentTopic {
+  padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  .welcomeTopicContainer {
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .imageTopic {
+    margin: 0 auto;
+  }
+  .contentTopic {
+    padding-top: 35px;
+    padding-left: 10px;
+  }
+}
+
+.optionTopic {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.optionTopic img {
+  max-width: 300px;
+  width: auto;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.optionTopic > div {
+  padding: 10px 30px;
+  max-width: 300px;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .optionTopic {
+    grid-template-columns: auto auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .optionTopic img {
+    max-width: 250px;
+    width: auto;
+    height: 160px;
+    border-radius: 10px;
+  }
+
+  .optionTopic > div {
+    padding: 10px 10px;
+    max-width: 300px;
+    width: 100%;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .optionTopic {
+    grid-template-columns: auto;
+  }
+}

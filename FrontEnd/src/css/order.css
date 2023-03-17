@@ -1,0 +1,51 @@
+.navigateIcon {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.disabledNavigateIcon {
+  opacity: 0.6;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.navigateIcon:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  color: #d1eafd;
+  background-color: #1895f5;
+  border-radius: 50%;
+}
+
+.orderTable {
+  width: 100%;
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 2px;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 30px;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.orderTableHeader {
+  background-color: #fafafa;
+  width: 100%;
+}
+.orderTableHeader > tr > th,
+td {
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-width: 0 0 1px 0;
+  padding: 20px;
+  outline: none;
+}
+
+.orderDetailContainer {
+  border-style: solid;
+  border-color: #e4e4e4;
+  border-radius: 10px;
+  border-width: 2px;
+  width: 100%;
+}
