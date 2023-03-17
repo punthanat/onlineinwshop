@@ -1,0 +1,32 @@
+{
+	"productId": 99,
+	"name": "Nani",
+	"description": "cutest cat doll in the world",
+	"price": 215.5,
+	"saleDate": "2019-12-07",
+	"imageName": "NaniImage.jpeg",
+	"quantity": 200,
+	"color": [{
+		"colorId": 1,
+		"colorName": "red"
+	}, {
+		"colorId": 2,
+		"colorName": "blue"
+	}, {
+		"colorId": 4,
+		"colorName": "yellow"
+	}],
+	"type": {
+		"typeId": 5,
+		"name": "doll"
+	},
+	"user": {
+		"userId": 1,
+		"userName": "testuser",
+		"password": "Testpassword1",
+		"address": "home bangkok 10150",
+		"tel": "0123456789",
+		"fullName": "testfullname",
+		"role": "ROLE_USER"
+	}
+}

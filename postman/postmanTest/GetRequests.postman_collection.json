@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "8bb95e82-265b-4140-9999-fc01141d09e2",
+		"name": "GetRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get home page",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"})"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://52.187.147.207/",
+					"protocol": "http",
+					"host": [
+						"52",
+						"187",
+						"147",
+						"207"
+					],
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post add products",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function(){\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"check addProduct \", function(){\r",
+							"    var jsonData =pm.response.json();\r",
+							"    pm.expect(jsonData.user.userName).to.eql(\"testuser\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "imageFile",
+							"type": "file",
+							"src": "postman/postman/1qdesi.jpg"
+						},
+						{
+							"key": "product",
+							"type": "file",
+							"src": "postman/postman/testjson post product.json"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://52.187.147.207/backend/products/add",
+					"protocol": "http",
+					"host": [
+						"52",
+						"187",
+						"147",
+						"207"
+					],
+					"path": [
+						"backend",
+						"products",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
